@@ -1,5 +1,9 @@
-const lotte= () => {
-    const random = Math.floor((Math.random()*45)+1)
-    return random
+const lotte = () => {
+    const array = [];
+    while (array.length < 7) {
+        const random = Math.floor((Math.random() * 45) + 1);
+        array.push(random)
+    }
+    return array
 }
 console.log(lotte())
